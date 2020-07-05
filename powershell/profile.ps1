@@ -1,6 +1,7 @@
 
 Import-Module posh-git
 Import-Module oh-my-posh
+Set-Theme Custom
 
 Function Open-VsCode {
   Param(

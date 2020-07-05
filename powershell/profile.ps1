@@ -21,3 +21,5 @@ Function Open-Explorer {
 
 Set-Alias -Name c -Value Open-VsCode
 Set-Alias -Name e -Value Open-Explorer
+
+Clear-Host

@@ -2,9 +2,19 @@
 function Write-Message
 {
     param(
-        $message
+        [Parameter(Position = 0, Mandatory = $true)]
+        [string]$message,
+        [Switch]$isError
     )
 
-    Write-Host " CONFIGURE " -BackgroundColor DarkGreen -NoNewline
+    if ($isError.IsPresent) {
+        Write-Host " " -NoNewline
+        Write-Host " DOTFILES " -BackgroundColor DarkRed -NoNewline
+        Write-Host " $message"
+        throw $message
+    }
+
+    Write-Host " " -NoNewline
+    Write-Host " DOTFILES " -BackgroundColor DarkGreen -NoNewline
     Write-Host " $message"
 }

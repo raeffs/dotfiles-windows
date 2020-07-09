@@ -1,3 +1,3 @@
 
 # install & update
-Add-Package 'microsoft-windows-terminal' 'Windows Terminal'
+Add-Package 'microsoft-windows-terminal' -displayName 'Windows Terminal'

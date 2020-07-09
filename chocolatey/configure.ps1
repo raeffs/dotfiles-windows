@@ -10,3 +10,6 @@ if (Get-CommandSave 'choco') {
 # configure
 Write-Message "Configuring Chocolatey ..."
 choco feature enable -n=useEnhancedExitCodes
+
+# import the module so we are able to use refreshenv durring first run
+Import-Module "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"

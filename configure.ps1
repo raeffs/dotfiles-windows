@@ -1,4 +1,7 @@
 
+. $PSScriptRoot\utils\write-message.ps1
 . $PSScriptRoot\utils\get-commandsave.ps1
+. $PSScriptRoot\utils\add-package.ps1
 
 . $PSScriptRoot\chocolatey\configure.ps1
+. $PSScriptRoot\7zip\configure.ps1

@@ -8,7 +8,7 @@ function Write-Message
         [string]$executable = 'Dotfiles'
     )
 
-    $color = if ($executable -eq 'Dotfiles') { [System.ConsoleColor]::DarkGreen } else { [System.ConsoleColor]::DarkMagenta }
+    $color = if ($executable -eq 'Dotfiles') { [System.ConsoleColor]::DarkGreen } else { [System.ConsoleColor]::DarkCyan }
     $executable = $executable.ToUpper()
 
     if ($isError.IsPresent) {

@@ -1,5 +1,6 @@
 
 . $PSScriptRoot\utils\write-message.ps1
+. $PSScriptRoot\utils\write-external.ps1
 . $PSScriptRoot\utils\get-commandsave.ps1
 . $PSScriptRoot\utils\add-package.ps1
 

@@ -3,18 +3,20 @@ function Write-Message
 {
     param(
         [Parameter(Position = 0, Mandatory = $true)]
-        [string]$message,
-        [Switch]$isError
+        $message,
+        [Switch]$isError,
+        [string]$executable = 'Dotfiles'
     )
 
+    $color = if ($executable -eq 'Dotfiles') { [System.ConsoleColor]::DarkGreen } else { [System.ConsoleColor]::DarkMagenta }
+    $executable = $executable.ToUpper()
+
     if ($isError.IsPresent) {
-        Write-Host " " -NoNewline
-        Write-Host " DOTFILES " -BackgroundColor DarkRed -NoNewline
+        Write-Host " $executable " -BackgroundColor DarkRed -NoNewline
         Write-Host " $message"
         throw $message
     }
 
-    Write-Host " " -NoNewline
-    Write-Host " DOTFILES " -BackgroundColor DarkGreen -NoNewline
+    Write-Host " $executable " -BackgroundColor $color -NoNewline
     Write-Host " $message"
 }

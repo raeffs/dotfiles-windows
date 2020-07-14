@@ -1,7 +1,4 @@
 
-. $PSScriptRoot\..\utils\write-message.ps1
-Write-Message $PROFILE
-
 # install and update powershell modules
 if (!(Get-PackageProvider NuGet -ErrorAction SilentlyContinue)) {
     Install-PackageProvider NuGet -Force

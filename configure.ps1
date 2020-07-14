@@ -1,4 +1,11 @@
 
+$runsElevated = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")
+
+if (!$runsElevated) { 
+    Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+    exit
+}
+
 . $PSScriptRoot\utils\write-message.ps1
 . $PSScriptRoot\utils\write-external.ps1
 . $PSScriptRoot\utils\get-commandsave.ps1
@@ -9,3 +16,4 @@
 . $PSScriptRoot\git\configure.ps1
 . $PSScriptRoot\docker\configure.ps1
 . $PSScriptRoot\windows-terminal\configure.ps1
+. $PSScriptRoot\powershell\configure.ps1

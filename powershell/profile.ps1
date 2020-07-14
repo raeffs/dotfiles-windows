@@ -1,6 +1,10 @@
 
 Import-Module posh-git
+
 Import-Module oh-my-posh
+# we need to resolve the symbolic link in order to get the correct path for the themes folder
+$profileDir = Split-Path -parent (Get-Item $PROFILE).Target
+$ThemeSettings.MyThemesLocation = "$profileDir\themes"
 Set-Theme custom-theme
 
 Function Open-VsCode {

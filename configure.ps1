@@ -8,9 +8,9 @@ if (!$runsElevated) {
 
 . $PSScriptRoot\utils\reboot-utils.ps1
 . $PSScriptRoot\utils\write-message.ps1
-. $PSScriptRoot\utils\write-external.ps1
 . $PSScriptRoot\utils\get-commandsave.ps1
 . $PSScriptRoot\utils\add-package.ps1
+. $PSScriptRoot\utils\version-utils.ps1
 
 Unregister-AnyScheduledTask
 
@@ -21,3 +21,5 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\docker\configure.ps1
 . $PSScriptRoot\windows-terminal\configure.ps1
 . $PSScriptRoot\powershell\configure.ps1
+
+PrintVersions

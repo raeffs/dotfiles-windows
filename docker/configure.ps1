@@ -3,7 +3,5 @@
 Add-Package 'docker-desktop' -displayName 'Docker'
 
 # verify
-$version = $(docker --version)
-Write-Message $version
-$version = $(docker-compose --version)
-Write-Message $version
+docker --version | AddVersion -name 'Docker' -replacement 'docker version'
+docker-compose --version | AddVersion -name 'Docker Compose' -replacement 'docker-compose version'

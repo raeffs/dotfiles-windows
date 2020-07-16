@@ -14,14 +14,14 @@ function Add-Package
         $displayName = $packageName
     }
 
-    choco search $packageName --exact --local-only | Write-External -executable 'Choco'
+    choco search $packageName --exact --local-only
     if ($LASTEXITCODE -eq 2) {
         Write-Message "Installing $displayName ..."
-        choco install $packageName --yes --limit-output --no-progress --params=$params | Write-External -executable 'Choco'
+        choco install $packageName --yes --limit-output --params=$params
     } elseif ($LASTEXITCODE -eq 0) {
         # upgrade would also install if not already installed... :?
         Write-Message "Updateing $displayName ..."
-        choco upgrade $packageName --yes --limit-output --no-progress --params=$params | Write-External -executable 'Choco'
+        choco upgrade $packageName --yes --limit-output --params=$params
     } else {
         Write-Message "Failed to install or update $displayName!" -isError
     }

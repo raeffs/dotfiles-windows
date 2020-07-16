@@ -12,11 +12,17 @@ function Write-Message
     $executable = $executable.ToUpper()
 
     if ($isError.IsPresent) {
+        Write-Host
+        Write-Host " " -NoNewline
         Write-Host " $executable " -BackgroundColor DarkRed -NoNewline
         Write-Host " $message"
+        Write-Host
         throw $message
     }
 
+    Write-Host
+    Write-Host " " -NoNewline
     Write-Host " $executable " -BackgroundColor $color -NoNewline
     Write-Host " $message"
+    Write-Host
 }

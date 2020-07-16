@@ -3,8 +3,7 @@
 Add-Package 'powershell-core' -displayName 'Powershell Core'
 
 # verify powershell core
-$version = $(pwsh --version)
-Write-Message $version
+pwsh -version | AddVersion -name 'PowerShell Core' -replacement 'powershell'
 
 # configure powershell
 Write-Message 'Configuring Powershell ...'

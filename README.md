@@ -11,13 +11,48 @@ This repository contains the configuration of my development environment.
 
 ## What's included?
 
+### 7-Zip
+
+7-Zip is installed with Windows Explorer integration and added to the `PATH`.
+
+### Chocolatey
+
+> The package manager for Windows
+
+Chocolatey is used to install most of the other packages.
+
+### Docker Desktop & Docker Compose
+
+Docker Desktop & Docker Compose are installed and added to the `PATH`.
+
+### Fonts
+
+The following Nerd Fonts are installed:
+- Cascadia Code
+- Fantasque Sans Mono
+- Fira Code
+- Victor Code
+
+### Git
+
+Git is installed along with the Git Extras extensions and added to the `PATH`.
+
+### Windows PowerShell & PowerShell Core
+
+A custom profile is setup for both, Windows PowerShell and PowerShell Core. The custom profile loads the `posh-git` and `oh-my-posh` modules and applies a custom theme. It also defines the following aliases:
+
+- `e` opens the current folder or the folder provided as argument in Windows Explorer
+- `c` opens the current folder or the folder provided as argument in Visual Studio Code
+
+### Windows Terminal
+
+The Windows Terminal Application is installed and configured to open a PowerShell Core tab by default. The configuration also include a custom color scheme to make it look like this:
+
 ![Screenshot of my Windows Terminal](windows-terminal.png)
 
-- 7Zip
-- Chocolatey (used to install most of the other packages)
-- Docker Desktop
-- Git and git-extras
-- Windows Terminal
+### Windows Subsystem for Linux
+
+The Windows Subsystem for Linux is installed / activated.
 
 ## How to use it?
 

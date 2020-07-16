@@ -1,10 +1,10 @@
 
 # install and update powershell modules
-if (!(Get-PackageProvider NuGet -ErrorAction SilentlyContinue)) {
+if (!(Get-PackageProvider NuGet -Force -ErrorAction SilentlyContinue)) {
     Install-PackageProvider NuGet -Force
 }
 
-if (!(Get-PSRepository PSGallery -ErrorAction SilentlyContinue)) {
+if ((Get-PSRepository PSGallery -ErrorAction SilentlyContinue).InstallationPolicy -ne 'Trusted') {
     Set-PSRepository PSGallery -InstallationPolicy Trusted
 }
 

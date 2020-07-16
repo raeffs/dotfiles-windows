@@ -16,6 +16,7 @@ Unregister-AnyScheduledTask
 
 . $PSScriptRoot\chocolatey\configure.ps1
 . $PSScriptRoot\wsl\configure.ps1
+. $PSScriptRoot\fonts\configure.ps1
 . $PSScriptRoot\7zip\configure.ps1
 . $PSScriptRoot\git\configure.ps1
 . $PSScriptRoot\docker\configure.ps1

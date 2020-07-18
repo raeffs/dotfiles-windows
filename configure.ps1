@@ -23,5 +23,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\docker\configure.ps1
 . $PSScriptRoot\windows-terminal\configure.ps1
 . $PSScriptRoot\powershell\configure.ps1
+. $PSScriptRoot\vscode\configure.ps1
 
 PrintVersions

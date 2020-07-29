@@ -24,5 +24,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\windows-terminal\configure.ps1
 . $PSScriptRoot\powershell\configure.ps1
 . $PSScriptRoot\vscode\configure.ps1
+. $PSScriptRoot\node\configure.ps1
 
 PrintVersions

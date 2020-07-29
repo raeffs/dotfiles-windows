@@ -1,0 +1,17 @@
+[alias]
+    # View abbreviated SHA, description, and history graph of the latest 20 commits
+    l = log --pretty=oneline -n 20 --graph --abbrev-commit
+    # View the current working tree status using the short format
+    s = status -s
+    # Clone a repository including all submodules
+    c = clone --recursive
+    # Commit all changes
+    ca = !git add -A && git commit -av
+    # Switch to a branch, but don't create it
+    co = checkout
+    # Switch to a branch, creating it if necessary
+    go = checkout -B
+    # Show verbose output about tags, branches or remotes
+    tags = tag -l
+    branches = branch -a
+    remotes = remote -v

@@ -22,3 +22,7 @@ if (-not (Test-Path -Path $GitExtrasPath)) {
 
 # verify git-extras
 git extras --version | AddVersion -name 'Git Extras'
+
+# link gitconfig
+New-Item -ItemType SymbolicLink -Path "$($env:HOME)\.gitconfig" -Target "$PSScriptRoot\user.gitconfig" -Force
+New-Item -ItemType SymbolicLink -Path "$($env:HOME)\aliases.gitconfig" -Target "$PSScriptRoot\aliases.gitconfig" -Force

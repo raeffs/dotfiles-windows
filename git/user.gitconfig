@@ -1,0 +1,18 @@
+[user]
+	email = git@raefftec.ch
+	name = Raphael Fleischlin
+
+[core]
+	eol = lf
+	autocrlf = input
+	editor = code.exe --wait
+
+[init]
+	defaultBranch = main
+
+[push]
+	default = current
+
+[include]
+    path = aliases.gitconfig
+    path = local.gitconfig

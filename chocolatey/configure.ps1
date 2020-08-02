@@ -1,7 +1,7 @@
 
-# install
+# install & update
 if (Get-CommandSave 'choco') {
-    Write-Message "Chocolatey is already installed!"
+    Add-Package 'chocolatey'
 } else {
     Write-Message "Installing Chocolatey ..."
     Invoke-WebRequest "https://chocolatey.org/install.ps1" -UseBasicParsing | Invoke-Expression

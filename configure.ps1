@@ -28,5 +28,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\browsers\configure.ps1
 . $PSScriptRoot\keepass\configure.ps1
 . $PSScriptRoot\telegram\configure.ps1
+. $PSScriptRoot\notion\configure.ps1
 
 PrintVersions

@@ -25,5 +25,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\powershell\configure.ps1
 . $PSScriptRoot\vscode\configure.ps1
 . $PSScriptRoot\node\configure.ps1
+. $PSScriptRoot\browsers\configure.ps1
 
 PrintVersions

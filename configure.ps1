@@ -27,5 +27,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\node\configure.ps1
 . $PSScriptRoot\browsers\configure.ps1
 . $PSScriptRoot\keepass\configure.ps1
+. $PSScriptRoot\telegram\configure.ps1
 
 PrintVersions

@@ -30,5 +30,6 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\telegram\configure.ps1
 . $PSScriptRoot\notion\configure.ps1
 . $PSScriptRoot\inkscape\configure.ps1
+. $PSScriptRoot\mpc\configure.ps1
 
 PrintVersions

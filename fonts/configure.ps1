@@ -18,7 +18,7 @@ $fonts | ForEach-Object {
     if (!(Test-Path $folder)) {
         Write-Message "Installing Nerdfont $_ ..."
         $tmp = New-TemporaryFile | Rename-Item -PassThru -NewName { $_ -replace 'tmp$', 'zip' }
-        Invoke-WebRequest -OutFile $tmp $url
+        (New-Object Net.WebClient).DownloadFile($url, $tmp)
         $tmp | Expand-Archive -DestinationPath $folder -Force
         $tmp | Remove-Item
         Get-ChildItem $folder -Filter *.ttf | ForEach-Object { Install-ChocolateyFont $_.FullName }

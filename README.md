@@ -15,9 +15,11 @@ This repository contains the configuration of my development environment.
 
 7-Zip is installed with Windows Explorer integration and added to the `PATH`.
 
-### Chocolatey
+### Browsers
 
-> The package manager for Windows
+Google Chrome, Mozilla Firefox and Microsoft Edge are installed but not updated, as they keep themselves up-to-date.
+
+### Chocolatey
 
 Chocolatey is used to install most of the other packages.
 
@@ -37,12 +39,50 @@ The following Nerd Fonts are installed:
 
 Git is installed along with the Git Extras extensions and added to the `PATH`.
 
+### Inkscape
+
+Inkscape is installed.
+
+### Keepass
+
+Keepass is installed.
+
+### Media Player Classic
+
+Media Player Classic Home Cinema Edition is installed.
+
+### Node
+
+Node Version Manager is installed and added to the `PATH`. Node Version Manager is used to install the latest version of Node and NPM. Also Yarn is installed.
+
+### Notion
+
+Notion is installed.
+
 ### Windows PowerShell & PowerShell Core
 
 A custom profile is setup for both, Windows PowerShell and PowerShell Core. The custom profile loads the `posh-git` and `oh-my-posh` modules and applies a custom theme. It also defines the following aliases:
 
+- `..` switches to the parent directory
+- `...` changes to the parent directory of the parent directory
+- `....` ...
+- `home` switches to the home directory
+- `la` lists all files
+- `lsd` lists all directories
 - `e` opens the current folder or the folder provided as argument in Windows Explorer
 - `c` opens the current folder or the folder provided as argument in Visual Studio Code
+
+### Telegram
+
+Telegram is installed.
+
+### Visual Studio Code
+
+Visual Studio Code is installed and added to the `PATH`.
+
+### Windows
+
+A lot of the preinstalled apps are uninstalled, desktop shortcuts are removed, and the explorer and taskbar are configured.
 
 ### Windows Terminal
 

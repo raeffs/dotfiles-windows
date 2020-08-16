@@ -7,7 +7,6 @@ $AppsToRemove = @(
     "*.SlingTV",
     "*.Twitter",
     "*.XING",
-    "AppUp.IntelGraphicsExperience",
     "AppUp.ThunderboltControlCenter",
     "DolbyLaboratories.DolbyAccess",
     "king.com.BubbleWitch3Saga",
@@ -54,7 +53,6 @@ $AppsToRemove = @(
     "Microsoft.YourPhone",
     "Microsoft.ZuneMusic",
     "Microsoft.ZuneVideo",
-    "NVIDIACorp.NVIDIAControlPanel",
     "RivetNetworks.KillerControlCenter",
     "SpotifyAB.SpotifyMusic",
     "WavesAudio.MaxxAudioProforDell2020"

@@ -72,6 +72,10 @@ A custom profile is setup for both, Windows PowerShell and PowerShell Core. The 
 - `e` opens the current folder or the folder provided as argument in Windows Explorer
 - `c` opens the current folder or the folder provided as argument in Visual Studio Code
 
+### Slack
+
+Slack is installed.
+
 ### Telegram
 
 Telegram is installed.

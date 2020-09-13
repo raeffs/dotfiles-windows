@@ -5,13 +5,10 @@
 [core]
 	eol = lf
 	autocrlf = input
-	editor = code.exe --wait
+	editor = code --wait
 
 [init]
 	defaultBranch = main
-
-[push]
-	default = current
 
 [include]
     path = aliases.gitconfig

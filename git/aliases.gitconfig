@@ -15,3 +15,6 @@
     tags = tag -l
     branches = branch -a
     remotes = remote -v
+    # Skip a file and ignore local changes to it
+    skip = update-index --skip-worktree
+    unskip = update-index --no-skip-worktree

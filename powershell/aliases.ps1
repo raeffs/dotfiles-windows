@@ -29,3 +29,5 @@ Function Open-VsCode {
   code $path
 }
 Set-Alias -Name c -Value Open-VsCode
+
+Set-Alias -Name openssl -Value "C:\Program Files\Git\usr\bin\openssl.exe"

@@ -18,6 +18,7 @@ npm --version | AddVersion -name 'NPM'
 # install global packages
 Write-Message "Installing global Node packages ..."
 npm i -g yarn
+npm i -g gitmoji-cli
 
 # verify global packages
 yarn --version | AddVersion -name 'Yarn'

@@ -5,8 +5,8 @@ $profileDir = Split-Path -parent (Get-Item $PROFILE).Target
 Import-Module posh-git
 
 Import-Module oh-my-posh
-$ThemeSettings.MyThemesLocation = "$profileDir\themes"
-Set-Theme custom-theme
+#$ThemeSettings.MyThemesLocation = "$profileDir\themes"
+#Set-Theme custom-theme
 
 . $profileDir\aliases.ps1
 

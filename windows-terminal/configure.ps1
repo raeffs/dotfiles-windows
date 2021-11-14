@@ -1,6 +1,6 @@
 
 # install & update
-Add-Package 'microsoft-windows-terminal' -displayName 'Windows Terminal'
+#Add-Package 'microsoft-windows-terminal' -displayName 'Windows Terminal'
 
 # verify
 $packageInfo = Get-AppxPackage -Name Microsoft.WindowsTerminal

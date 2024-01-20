@@ -56,7 +56,8 @@
             {
                 "face": "FantasqueSansM Nerd Font",
                 "size": 13.0
-            }
+            },
+            "startingDirectory": "%DevDir%"
         },
         "list": 
         [

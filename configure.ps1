@@ -15,22 +15,15 @@ if (!$runsElevated) {
 Unregister-AnyScheduledTask
 
 . $PSScriptRoot\chocolatey\configure.ps1
-. $PSScriptRoot\wsl\configure.ps1
 . $PSScriptRoot\fonts\configure.ps1
 . $PSScriptRoot\7zip\configure.ps1
 . $PSScriptRoot\git\configure.ps1
-. $PSScriptRoot\docker\configure.ps1
 . $PSScriptRoot\windows-terminal\configure.ps1
 . $PSScriptRoot\powershell\configure.ps1
 . $PSScriptRoot\vscode\configure.ps1
-. $PSScriptRoot\node\configure.ps1
 . $PSScriptRoot\browsers\configure.ps1
-. $PSScriptRoot\keepass\configure.ps1
-. $PSScriptRoot\telegram\configure.ps1
-. $PSScriptRoot\notion\configure.ps1
-. $PSScriptRoot\inkscape\configure.ps1
+. $PSScriptRoot\keepassxc\configure.ps1
 . $PSScriptRoot\mpc\configure.ps1
-. $PSScriptRoot\slack\configure.ps1
 . $PSScriptRoot\windows\configure.ps1
 
 PrintVersions

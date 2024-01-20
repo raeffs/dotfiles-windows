@@ -1,8 +1,6 @@
 
 # navigation aliases
 Function .. { Set-Location .. }
-Function ... { Set-Location ..\.. }
-Function .... { Set-Location ..\..\.. }
 Function home { Set-Location ~ }
 
 # list all files

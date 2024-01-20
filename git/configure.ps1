@@ -16,7 +16,7 @@ if (-not (Test-Path -Path $GitExtrasPath)) {
     git extras update
     Pop-Location
 } else {
-    Write-Message 'Updateing Git Extras ...'
+    Write-Message 'Updating Git Extras ...'
     git extras update
 }
 

@@ -1,14 +1,49 @@
 {
+  "$help": "https://aka.ms/terminal-documentation",
   "$schema": "https://aka.ms/terminal-profiles-schema",
-  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+  "actions": [
+    {
+      "command": "duplicateTab",
+      "keys": "ctrl+down"
+    },
+    {
+      "command": {
+        "action": "prevTab"
+      },
+      "keys": "ctrl+left"
+    },
+    {
+      "command": "paste",
+      "keys": "ctrl+v"
+    },
+    {
+      "command": {
+        "action": "copy",
+        "singleLine": false
+      },
+      "keys": "ctrl+c"
+    },
+    {
+      "command": {
+        "action": "nextTab"
+      },
+      "keys": "ctrl+right"
+    },
+    {
+      "command": "toggleFullscreen",
+      "keys": "ctrl+up"
+    }
+  ],
+  "copyFormatting": "none",
   "copyOnSelect": false,
-  "copyFormatting": false,
+  "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
   "profiles": {
     "defaults": {
-      "startingDirectory": "D:\\code",
-      "fontFace": "FantasqueSansMono NF",
-      "fontSize": 13,
-      "colorScheme": "custom"
+      "colorScheme": "custom",
+      "font": {
+        "face": "FantasqueSansMono NF",
+        "size": 13
+      }
     },
     "list": [
       {
@@ -19,74 +54,39 @@
       },
       {
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "name": "Windows PowerShell",
-        "commandline": "powershell.exe",
-        "hidden": false
+        "hidden": false,
+        "name": "Windows PowerShell"
       },
       {
         "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "name": "Command Prompt",
-        "commandline": "cmd.exe",
-        "hidden": false
-      },
-      {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure",
-        "hidden": false
+        "hidden": false,
+        "name": "Command Prompt"
       }
     ]
   },
   "schemes": [
     {
-      "name": "custom",
+      "background": "#1D1F21",
+      "black": "#1D1F21",
       "blue": "#5DA5CF",
+      "brightBlack": "#B8DBEF",
       "brightBlue": "#5DA5CF",
-      "green": "#21B58B",
-      "brightGreen": "#21B58B",
-      "purple": "#63549E",
-      "brightPurple": "#63549E",
-      "red": "#A8324C",
-      "brightRed": "#A8324C",
-      "yellow": "#FFB30F",
-      "brightYellow": "#FFB30F",
-      "cyan": "#FE64A3",
       "brightCyan": "#FE64A3",
-      "black": "#1d1f21",
-      "brightBlack": "#b8dbef",
-      "white": "#b8dbef",
-      "brightWhite": "#b8dbef",
-      "background": "#1d1f21",
-      "foreground": "#b8dbef"
-    }
-  ],
-  "keybindings": [
-    {
-      "command": {
-        "action": "copy",
-        "singleLine": false
-      },
-      "keys": "ctrl+c"
-    },
-    {
-      "command": "paste",
-      "keys": "ctrl+v"
-    },
-    {
-      "command": "nextTab",
-      "keys": "ctrl+right"
-    },
-    {
-      "command": "prevTab",
-      "keys": "ctrl+left"
-    },
-    {
-      "command": "duplicateTab",
-      "keys": "ctrl+down"
-    },
-    {
-      "command": "toggleFullscreen",
-      "keys": "ctrl+up"
+      "brightGreen": "#21B58B",
+      "brightPurple": "#63549E",
+      "brightRed": "#A8324C",
+      "brightWhite": "#B8DBEF",
+      "brightYellow": "#FFB30F",
+      "cursorColor": "#FFFFFF",
+      "cyan": "#FE64A3",
+      "foreground": "#B8DBEF",
+      "green": "#21B58B",
+      "name": "custom",
+      "purple": "#63549E",
+      "red": "#A8324C",
+      "selectionBackground": "#FFFFFF",
+      "white": "#B8DBEF",
+      "yellow": "#FFB30F"
     }
   ]
 }

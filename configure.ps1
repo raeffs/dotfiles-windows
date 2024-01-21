@@ -21,7 +21,7 @@ Unregister-AnyScheduledTask
 . $PSScriptRoot\windows-terminal\configure.ps1
 . $PSScriptRoot\powershell\configure.ps1
 . $PSScriptRoot\vscode\configure.ps1
-. $PSScriptRoot\browsers\configure.ps1
+. $PSScriptRoot\firefox\configure.ps1
 . $PSScriptRoot\keepassxc\configure.ps1
 . $PSScriptRoot\mpc\configure.ps1
 . $PSScriptRoot\windows\configure.ps1

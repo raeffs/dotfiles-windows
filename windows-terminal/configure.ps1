@@ -8,4 +8,4 @@ $packageInfo.Version | AddVersion -name 'Windows Terminal'
 
 # link settings
 $settings = "$($env:LOCALAPPDATA)\packages\$($packageInfo.PackageFamilyName)\LocalState\settings.json"
-New-Item -ItemType SymbolicLink -Path $settings -Target "$PSScriptRoot\settings.json" -Force
+Copy-Item "$PSScriptRoot\settings.json" "$settings" -Force

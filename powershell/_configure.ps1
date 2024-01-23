@@ -12,4 +12,6 @@ Install-Module posh-git
 Install-Module oh-my-posh
 
 # link profile
-New-Item -ItemType SymbolicLink -Path $PROFILE -Target "$PSScriptRoot\profile.ps1" -Force
+$profileDir = Split-Path -parent $PROFILE
+Copy-Item "$PSScriptRoot\profile.ps1" "$PROFILE" -Force
+Copy-Item "$PSScriptRoot\aliases.ps1" "$profileDir" -Force
